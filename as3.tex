@@ -1,0 +1,59 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage[utf8]{inputenc}
+ 
+\usepackage{tfrupee}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{array}
+
+\begin{document}
+
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
+\let\vec\mathbf
+
+
+\title{Assignment 3}
+\author{\textbf{Pathlavath Shankar (CS21BTECH11064)}}
+\maketitle
+
+
+
+\textbf{\textit{Problem (Papoulis):Chapter 6,6.71}}\\
+The random variables x and y are uniform in the interval (-1,1)and independent. Find the conditional density fr(r \mid M) \text { of the random variable,}\\ r=\sqrt{X^2+Y^2},where M = {r\leq 1}\\
+
+
+
+\textbf{\textit{Solution:}}\\
+
+The mass density in the square \mid x \mid,\\\mid y \mid \text{ of the xy  plane  equals  1/4};\\
+hence,P(r{\leq1})=x/4 and\\
+
+   P({r\leq}r,{r\leq1})=
+ \left\{
+\begin{array}{l}
+  P{r\leqr}=\pi r^2 /4,r\leq1    \\
+    \vspace{0.01cm}  \\
+     P{r\leqr}=\pi/4,r>1\\
+\end{array}\\
+
+ \\
+    Fr(r\mid M)
+    \\=P({r\leq r ,M})/P({r\leq 1})=\left\{\begin{array}{l}
+     r^2 ;r\leq1  \\
+     \vspace{0.01cm}\\
+     1 ;r>1\\
+    
+\end{array} \\
+
+fr(r\mid m)=
+ \left\{
+\begin{array}{l}
+  2r , r<+1  \\
+    \vspace{0.01cm}  \\
+     0 , \text {otherwise}\\
+\end{array}\\
+
+
+\end{document}
